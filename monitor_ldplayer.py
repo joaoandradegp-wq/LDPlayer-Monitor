@@ -4,6 +4,7 @@ import winreg
 import pyautogui
 import traceback
 import ctypes
+import os
 
 # precisa do pywin32:
 import win32gui
@@ -12,6 +13,11 @@ import win32process
 
 PROCESS_NAME = "dnplayer.exe"
 REG_PATH = r"Control Panel\\Desktop"
+
+os.startfile("D:\\LDPlayer\\LDPlayer4.0\\dnplayer.exe")
+print("Aguardando LDPlayer iniciar....")
+time.sleep(40)
+print("Iniciando...")
 
 # --- Funções de protetor de tela ---
 def get_screensaver_config():
